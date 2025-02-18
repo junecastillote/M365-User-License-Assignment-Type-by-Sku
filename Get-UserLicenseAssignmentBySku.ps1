@@ -69,8 +69,6 @@ param (
     $SkuPartNumber
 )
 
-# This script requires connection to Microsoft Graph PowerShell with these minimum permissions: LicenseAssignment.Read.All, User.ReadBasic.All
-
 if (!(Get-Module Microsoft.Graph.Authentication)) {
     "ERROR: Connect to Microsoft Graph PowerShell first with the following minimum permissions: LicenseAssignment.Read.All, User.ReadBasic.All" | Out-Default
     return $null
