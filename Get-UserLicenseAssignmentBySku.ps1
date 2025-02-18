@@ -136,6 +136,7 @@ foreach ($user in ($licensed_users | Sort-Object DisplayName)) {
                         "Direct"
                     }
                 )
+                LicenseGroup = $($license_state.AssignedByGroup -join ";")
             }
         )
     )
